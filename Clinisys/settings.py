@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     # Ativando o app Paginas
     'paginas.apps.PaginasConfig',
 
+    # Ativando o app Cadastros
+    'cadastros.apps.CadastrosConfig'
+
     'crispy_forms',
     'crispy_bootstrap5',
 ]
