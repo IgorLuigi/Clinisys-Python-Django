@@ -81,7 +81,12 @@ class Agenda(models.Model):
         return "{} + {}".format(self.data, self.horario)
 
 class Consulta(models.Model):
-    
+    descricaoConsulta = models.CharField(verbose_name="Descrição da consulta")
+    receita = models.CharField(verbose_name="Descrição da receita")
+    procedimentoRealizado = models.CharField(verbose_name="Descrição dos procedimentos realizados")
+
+    def __str__(self):
+        return "{}".format(self.procedimentoRealizado)
 
     
 
